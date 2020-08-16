@@ -49,7 +49,7 @@ HEADER/NAV
 section {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  
 }
 .hola {
   height: 100vh;
@@ -58,7 +58,7 @@ section {
   text-align: center;
   align-content: center;
   align-items: center;
-  padding-left: 35px;
+  
 }
 
 .descripcion {
@@ -361,51 +361,45 @@ MEDIA
   /* Seccion Header*/
   .nav-list {
     display: none;
+  
   }
 
   .hamburg {
     display: block;
     color: #776d8a;
     font-size: 25px;
-    margin: 10px;
   }
+  
 
   /*Seccion hola*/
-  .hola {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .contenedor-hola {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
+  
 
   .descripcion {
-    text-align: center;
     font-size: 30px;
   }
 
-
   .dani {
-    font-size: 50px;
+    font-size: 70px;
   }
 
 /*Seccion sobre mi*/
 
-.presentacion {
-  flex-direction: column-reverse;
-    align-items: center;
-}
-.descripcion-sobre-mi{
-  align-items: center;
-}
+.descripcion-sobre-mi {
+  margin-top:25px;
 
+}
+h3 {
+  font-size:  40px;
+}
+.dani2 {
+  font-size: 50px;
+}
+p {
+  font-size: 20px;
+}
 /*Seccion cita*/
 .contenedor-cita {
-  padding: 25px;
-  padding-bottom: 40px;
-  padding-top: 50px;
-
+ 
 }
 .cita-texto {
   font-size: 20px;
@@ -414,12 +408,12 @@ MEDIA
 .cita-firma {
   font-size: 30px;
 }
+/*seccion footer*/
+.contenedor-footer {
+  text-align: center;
+}
 
-.cita {
-  padding: 10px;
-  margin: 10px;
 }
 .barra-footer {
   display: none;
-}
 }
