@@ -1,0 +1,425 @@
+/*MAIN*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Parisienne&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------------
+HEADER/NAV
+--------------------*/
+
+.hamburg {
+  display: none;
+}
+.nav {
+  background-color: #f3e6e3;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  align-items: center;
+  height: 60px;
+}
+.nav-list li {
+  margin-right: 25px;
+  font-size: 20px;
+  color: #56556e;
+  font-family: "Montserrat", sans-serif;
+}
+.nav-list a {
+  text-decoration: none;
+  color: #56556e;
+}
+
+.nav-list a:hover {
+  color: #e84a5f;
+}
+
+/*-----------
+ SECCION HOLA
+ ------------*/
+section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.hola {
+  height: 100vh;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 35px;
+}
+
+.descripcion {
+  color: #ed6663;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dani {
+  color: #562349;
+  font-family: "Parisienne", cursive;
+  font-weight: 800;
+  font-size: 100px;
+  margin-bottom: 20px;
+}
+
+.boton {
+  background-color: #d9c6a5;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 100px;
+  font-weight: 500;
+  width: 200px;
+  text-decoration: none;
+}
+
+/*---------------
+SECCION SOBRE MI
+-----------------*/
+.presentacion {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.descripcion-sobre-mi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: #c26565;
+}
+
+.dani2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  color: #3c2946;
+}
+.que-soy {
+  margin-left: 25px;
+  font-size: 23px;
+  font-family: "Montserrat", sans-serif;
+  width: 50%;
+  color: #382933;
+}
+
+.img-presentacion {
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------
+SECCION CONOCIMIENTOS
+----------------------*/
+.conocimientos {
+  flex-wrap: wrap;
+  background-color: #ebebeb;
+  box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+  font-family: "Montserrat", sans-serif;
+  color: #6f4a8e;
+}
+.contenedor-conocimientos {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 80px;
+}
+
+.skills-p {
+  font-weight: 400;
+  max-width: 400px;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 20px;
+}
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+}
+
+.caja {
+  background-color: white;
+  border: 1px solid rgb(196, 194, 194);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#icono {
+  font-size: 90px;
+  margin: 25px 0px 25px;
+  color: #ed6663;
+}
+/*----------------
+SECCION CITA
+----------------*/
+.seccion-cita { 
+   
+  display: flex;
+  justify-content: center;
+ 
+  
+}
+.contenedor-cita {
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3e6e3;
+  
+  padding:70px;
+  color: #d54062;
+  width:60%;
+}
+.cita{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid #d54062;
+  padding: 40px;
+  margin:40px;
+}
+.cita-texto{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #d54062;
+  
+}
+.firma{
+  display: flex;
+  justify-content: center;
+ 
+ 
+
+}
+
+.cita-firma{
+
+  font-family: "Montserrat", serif;
+  font-size: 35px;
+  color: #56556e;
+  text-align: center;
+
+}
+
+/*----------------
+SECCION PROYECTOS
+------------------*/
+.proyectos {
+  font-family: "Montserrat", sans-serif;
+  background-color: #dbe3e5;
+}
+.contenedor-proyectos {
+  text-align: center;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+.mis-pro {
+  color: #d54062;
+  font-size: 50px;
+  margin: 40px;
+}
+.proyecto-boton-selec {
+  background-color: #776d8a;
+  color: white;
+  padding: 0 30px;
+  border-radius: 100px;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  color: #59405c;
+  cursor: pointer;
+  margin: 0 20px 30px;
+}
+.projecto-boton {
+  flex-wrap: wrap;
+}
+
+.principal-proyectos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+}
+
+.caja-pro {
+  border: 1px solid rgb(196, 194, 194);
+  border-radius: 5%;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+}
+
+.proyecto-img {
+  width: 100%;
+}
+
+/*-------------
+FOOTER/CONTACTO
+----------------*/
+.contenedor-footer {
+  background-color: #776d8a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: " Montserrrat ", sans-serif;
+}
+
+.barra-footer {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: #fabea7;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fabea7;
+}
+
+.button-footer {
+  color: #f5f3f5;
+  margin: 20px;
+}
+
+.frase-contacto {
+  font-size: 20px;
+  color: #f3e6e3;
+  margin: 20px;
+}
+.iconos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.links-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f3f5;
+  width: 40px;
+  height: auto;
+  margin: 30px;
+}
+.icono-footer {
+  font-size: 25px;
+}
+
+.final {
+  color: white;
+}
+/*----------
+MEDIA
+----------*/
+@media (min-width: 600px) and (max-width: 900px) {
+  /* Seccion Header*/
+  .nav-list {
+    display: none;
+  }
+
+  .hamburg {
+    display: block;
+    color: #776d8a;
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  /*Seccion hola*/
+  .hola {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contenedor-hola {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .descripcion {
+    text-align: center;
+    font-size: 30px;
+  }
+
+
+  .dani {
+    font-size: 50px;
+  }
+
+/*Seccion sobre mi*/
+
+.presentacion {
+  flex-direction: column-reverse;
+    align-items: center;
+}
+.descripcion-sobre-mi{
+  align-items: center;
+}
+
+/*Seccion cita*/
+.contenedor-cita {
+  padding: 25px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+
+}
+.cita-texto {
+  font-size: 20px;
+}
+
+.cita-firma {
+  font-size: 30px;
+}
+
+.cita {
+  padding: 10px;
+  margin: 10px;
+}
+.barra-footer {
+  display: none;
+}
+}
