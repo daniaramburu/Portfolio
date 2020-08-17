@@ -49,7 +49,7 @@ HEADER/NAV
 section {
   display: flex;
   justify-content: center;
-  
+ 
 }
 .hola {
   height: 100vh;
@@ -58,7 +58,6 @@ section {
   text-align: center;
   align-content: center;
   align-items: center;
-  
 }
 
 .descripcion {
@@ -95,6 +94,7 @@ SECCION SOBRE MI
   flex-direction: column;
   background-color: #eeeeee;
   text-align: center;
+  height: 100vh;
 }
 
 .descripcion-sobre-mi {
@@ -137,6 +137,7 @@ SECCION CONOCIMIENTOS
   box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
   font-family: "Montserrat", sans-serif;
   color: #6f4a8e;
+  height: 100vh;
 }
 .contenedor-conocimientos {
   display: flex;
@@ -188,55 +189,46 @@ h2 {
 /*----------------
 SECCION CITA
 ----------------*/
-.seccion-cita { 
-   
+.seccion-cita {
   display: flex;
   justify-content: center;
- 
-  
+  height: 100vh;
 }
 .contenedor-cita {
-
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #f3e6e3;
-  
-  padding:70px;
+
+  padding: 70px;
   color: #d54062;
-  width:60%;
+  width: 60%;
 }
-.cita{
+.cita {
   display: flex;
   justify-content: center;
   align-items: center;
-  border:2px solid #d54062;
+  border: 2px solid #d54062;
   padding: 40px;
-  margin:40px;
+  margin: 40px;
 }
-.cita-texto{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 40px;
+.cita-texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: px;
   text-align: center;
   color: #d54062;
-  
 }
-.firma{
+.firma {
   display: flex;
   justify-content: center;
- 
- 
-
 }
 
-.cita-firma{
-
+.cita-firma {
   font-family: "Montserrat", serif;
   font-size: 35px;
   color: #56556e;
   text-align: center;
-
 }
 
 /*----------------
@@ -245,6 +237,8 @@ SECCION PROYECTOS
 .proyectos {
   font-family: "Montserrat", sans-serif;
   background-color: #dbe3e5;
+  height: 100vh;
+
 }
 .contenedor-proyectos {
   text-align: center;
@@ -304,7 +298,7 @@ FOOTER/CONTACTO
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
   font-family: " Montserrrat ", sans-serif;
 }
 
@@ -348,31 +342,29 @@ a {
   margin: 30px;
 }
 .icono-footer {
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .final {
   color: white;
 }
 /*----------
-MEDIA
+MEDIA MIN 600PX
 ----------*/
 @media (min-width: 600px) and (max-width: 900px) {
   /* Seccion Header*/
   .nav-list {
     display: none;
-  
   }
 
   .hamburg {
     display: block;
     color: #776d8a;
     font-size: 25px;
+    padding-left: 15px;
   }
-  
 
   /*Seccion hola*/
-  
 
   .descripcion {
     font-size: 30px;
@@ -382,38 +374,165 @@ MEDIA
     font-size: 70px;
   }
 
-/*Seccion sobre mi*/
+  /*Seccion sobre mi*/
 
-.descripcion-sobre-mi {
-  margin-top:25px;
+  .descripcion-sobre-mi {
+    margin-top: 25px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  .dani2 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
 
-}
-h3 {
-  font-size:  40px;
-}
-.dani2 {
-  font-size: 50px;
-}
-p {
-  font-size: 20px;
-}
-/*Seccion cita*/
-.contenedor-cita {
+  .img-sobre-mi{
+    width: 100%;
+    height: auto;
+  }
+  /*Seccion Proyectos*/
+  .proyectos{
+  height: auto;
+  }
+  /*Seccion cita*/
  
-}
-.cita-texto {
-  font-size: 20px;
-}
+  .cita-texto {
+    font-size: 20px;
+  }
 
-.cita-firma {
-  font-size: 30px;
-}
-/*seccion footer*/
-.contenedor-footer {
-  text-align: center;
-}
-
+  .cita-firma {
+    font-size: 30px;
+  }
+  /*seccion footer*/
+  .contenedor-footer {
+    text-align: center;
+  }
 }
 .barra-footer {
   display: none;
+}
+/*----------
+MEDIA MAX 600PX
+------------*/
+  /* Seccion Header*/
+  @media (max-width:600px){
+  .nav-list {
+    display: none;
+  }
+
+  .hamburg {
+    display: block;
+    color: #776d8a;
+    font-size: 30px;
+    padding-left: 15px;
+  }
+  
+  
+  /*Seccion hola*/
+
+  .descripcion {
+    font-size: 25px;
+  }
+
+  .dani {
+    font-size: 70px;
+  }
+  .img-sobre-mi {
+    width: 100%;
+    height: auto;
+  }
+
+   /*Seccion sobre mi*/
+.que-soy {
+  width: auto;
+  text-align: center;
+  margin-left: 0;
+}
+   .descripcion-sobre-mi {
+    height: 100vh;
+    margin-top: 15px;
+   
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .dani2 {
+    font-size: 35px;
+  }
+  .soy {
+    font-size: 16px;
+  }
+  .img-sobre-mi{
+    width: 100%;
+    height: auto;
+  }
+/*Seccion conocimientos*/
+.conocimientos {
+  height: auto;
+}
+  h2 {
+    font-size: 35px;
+    margin: 20px;
+  }
+
+  .skills-p{
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .caja {
+    width: 30%;
+    height: 20%;
+
+  }
+  /*Seccion cita*/
+ .contenedor-cita {
+   width: 100%;
+   height: auto;
+ }
+
+ .cita {
+   width: 90%;
+ }
+  .cita-texto {
+    font-size: 15px;
+  }
+
+  .cita-firma {
+    font-size: 20px;
+  }
+
+  /*seccion proyectos*/
+  .proyectos{
+    height: auto
+  }
+  .mis-pro {
+    font-size: 35px;
+
+  }
+.caja-pro {
+  width: 30%;
+  height: 20%;
+}
+  p {
+    font-size: 10px;
+  }
+  /*seccion footer*/
+  .contenedor-footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
+.barra-footer {
+  display: none;
+}
+
+.p-contacto {
+  font-size: 18px ;
+}
+.final {
+  font-size: 15px;
 }
