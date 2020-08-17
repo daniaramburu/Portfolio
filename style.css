@@ -49,7 +49,6 @@ HEADER/NAV
 section {
   display: flex;
   justify-content: center;
- 
 }
 .hola {
   height: 100vh;
@@ -238,7 +237,6 @@ SECCION PROYECTOS
   font-family: "Montserrat", sans-serif;
   background-color: #dbe3e5;
   height: 100vh;
-
 }
 .contenedor-proyectos {
   text-align: center;
@@ -389,16 +387,16 @@ MEDIA MIN 600PX
     font-size: 20px;
   }
 
-  .img-sobre-mi{
+  .img-sobre-mi {
     width: 100%;
     height: auto;
   }
   /*Seccion Proyectos*/
-  .proyectos{
-  height: auto;
+  .proyectos {
+    height: auto;
   }
   /*Seccion cita*/
- 
+
   .cita-texto {
     font-size: 20px;
   }
@@ -417,8 +415,8 @@ MEDIA MIN 600PX
 /*----------
 MEDIA MAX 600PX
 ------------*/
-  /* Seccion Header*/
-  @media (max-width:600px){
+/* Seccion Header*/
+@media (max-width: 600px) {
   .nav-list {
     display: none;
   }
@@ -429,8 +427,7 @@ MEDIA MAX 600PX
     font-size: 30px;
     padding-left: 15px;
   }
-  
-  
+
   /*Seccion hola*/
 
   .descripcion {
@@ -445,16 +442,15 @@ MEDIA MAX 600PX
     height: auto;
   }
 
-   /*Seccion sobre mi*/
-.que-soy {
-  width: auto;
-  text-align: center;
-  margin-left: 0;
-}
-   .descripcion-sobre-mi {
+  /*Seccion sobre mi*/
+  .que-soy {
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+  }
+  .descripcion-sobre-mi {
     height: 100vh;
     margin-top: 15px;
-   
   }
   h3 {
     font-size: 30px;
@@ -465,20 +461,20 @@ MEDIA MAX 600PX
   .soy {
     font-size: 16px;
   }
-  .img-sobre-mi{
+  .img-sobre-mi {
     width: 100%;
     height: auto;
   }
-/*Seccion conocimientos*/
-.conocimientos {
-  height: auto;
-}
+  /*Seccion conocimientos*/
+  .conocimientos {
+    height: auto;
+  }
   h2 {
     font-size: 35px;
     margin: 20px;
   }
 
-  .skills-p{
+  .skills-p {
     font-size: 20px;
     margin: 20px;
   }
@@ -486,17 +482,16 @@ MEDIA MAX 600PX
   .caja {
     width: 30%;
     height: 20%;
-
   }
   /*Seccion cita*/
- .contenedor-cita {
-   width: 100%;
-   height: auto;
- }
+  .contenedor-cita {
+    width: 100%;
+    height: auto;
+  }
 
- .cita {
-   width: 90%;
- }
+  .cita {
+    width: 90%;
+  }
   .cita-texto {
     font-size: 15px;
   }
@@ -506,17 +501,16 @@ MEDIA MAX 600PX
   }
 
   /*seccion proyectos*/
-  .proyectos{
-    height: auto
+  .proyectos {
+    height: auto;
   }
   .mis-pro {
     font-size: 35px;
-
   }
-.caja-pro {
-  width: 30%;
-  height: 20%;
-}
+  .caja-pro {
+    width: 30%;
+    height: 20%;
+  }
   p {
     font-size: 10px;
   }
@@ -531,7 +525,7 @@ MEDIA MAX 600PX
 }
 
 .p-contacto {
-  font-size: 18px ;
+  font-size: 18px;
 }
 .final {
   font-size: 15px;
