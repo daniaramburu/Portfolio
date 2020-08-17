@@ -17,6 +17,8 @@
   -------------------->
   <header class="nav">
 
+    <!-- Este no es buen nombre de clase: no describe la función del elemento. "icono-menu-mobile", 
+    por ejemplo, seria mejor -->
     <div class="hamburg">
       <i class="fas fa-bars"></i>
     </div>
@@ -37,7 +39,7 @@
   -------------------->
 
   <section class="hola">
-
+<!-- Ya te mencioné en los comentarios principales los nombres de estas clases: vale la pena mejorarlos.  -->
     <div class="contenedor-hola">
       <h3 class="descripcion">Web develope & Art</h3>
       <h1 class="dani">Daniela Aramburu</h1>
@@ -54,6 +56,8 @@
 
     <div class="descripcion-sobre-mi">
       <div class="personal">
+        <!-- Nuevamente comento los nombres de clases, especicialmente "dani2", "que-soy" y "soy". 
+        Por otro lado, solo debemos tener un solo <h1> por pagina  -->
         <h3> ¡Hola! , soy </h3>
         <h1 class="dani2"> Dani</h1>
       </div>
@@ -79,6 +83,12 @@
       <h2>Mis conocimientos</h2>
       <p class="skills-p">Estas son algunas de las tecnologías sobre las que sé:</p>
 
+      <!-- No es necesario agregarle id a los iconos, ni es buena practica usar los ids para estilar
+      salvo en casos muy especificos. Si tu intencion era agregarle una clase a los iconos, 
+      podes agregarsela directamente separandola con un espacio. Asi:
+      <i class="devicon-html5-plain icono"></i> -->
+
+      <!-- Principal no es un buen nombre, como tampoco lo es caja -->
       <div class="principal">
         <div class="caja">
           <i class="devicon-html5-plain" id="icono"></i>
@@ -141,6 +151,11 @@
     <div class="contenedor-proyectos">
       <h2 class="mis-pro">Mis Proyectos</h2>
       <div class="proyecto-botones">
+        <!-- Fijate que no usas en ningun lugar de tu css el estilo "proyecto-boton"
+        Para que le dimos esta clase a los elementos, entonces?
+        Noto que en tu css estilaste con la etiqueta button, lo cual puede llegar a ser
+        un problema si eventualmente agregas mas botones a tu web y queres que se vean distintos. 
+        Yo pondria los estilos que hoy estan en button en la clase proyecto-boton -->
         <button type="button" class="proyecto-boton-selec">Todos</button>
         <button type="button" class="proyecto-boton">HTML/CSS</button>
         <button type="button" class="proyectp-boton">JavaScript</button>
@@ -189,10 +204,11 @@
   -------------------->
 
   <footer id="contacto">
-
+<!-- no es necesario este div aqui, podriamos darle a footer los estilos de contenedor-footer y listo -->
     <div class="contenedor-footer">
       <nav>
         <ul class="barra-footer">
+          <!-- Estos elementos tienen la clase button, pero esa clase no se esta usando en tu CSS -->
           <li class="button button-footer"><a href="#hola">HOLA</a></li>
           <li class="button button-footer"><a href="#conocimientos">CONOCIMIENTOS</a></li>
           <li class="button button-footer"><a href="#proyectos">PROYECTOS</a></li>

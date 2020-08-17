@@ -34,6 +34,8 @@ HEADER/NAV
   color: #56556e;
   font-family: "Montserrat", sans-serif;
 }
+
+/* no es necesario decir aqui text decoration none, ya que mas abajo (linea 313) se lo dijiste a todos tus <a> */
 .nav-list a {
   text-decoration: none;
   color: #56556e;
@@ -50,6 +52,8 @@ section {
   display: flex;
   justify-content: center;
 }
+
+/* No son necesarios ni flex wrap ni align content center aqui */
 .hola {
   height: 100vh;
   background: linear-gradient(to right, #ece9e6, #ffffff);
@@ -68,11 +72,14 @@ section {
 .dani {
   color: #562349;
   font-family: "Parisienne", cursive;
+  /* No es necesario font weight aqui */
   font-weight: 800;
   font-size: 100px;
   margin-bottom: 20px;
 }
 
+/* Este boton se refiere a un <a>, que es un elemento en linea. 
+Los elementos en linea no tienen width, ignoran esa indicacion si se las damos en css */
 .boton {
   background-color: #d9c6a5;
   color: white;
@@ -87,6 +94,7 @@ section {
 SECCION SOBRE MI
 -----------------*/
 .presentacion {
+  /* ni justify-content ni flex-wrap: son necesarios aqui */
   justify-content: center;
   flex-wrap: wrap;
   display: flex;
@@ -123,6 +131,8 @@ h3 {
 }
 
 .img-presentacion {
+  /* Si no ponemos display: flex, no se aplican estos dos estilos. 
+  De todos modos no son necesarios.  */
   justify-content: center;
   align-items: center;
 }
@@ -131,6 +141,7 @@ h3 {
 SECCION CONOCIMIENTOS
 ----------------------*/
 .conocimientos {
+  /* No es necesario flex wrap aqui */
   flex-wrap: wrap;
   background-color: #ebebeb;
   box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
@@ -141,6 +152,8 @@ SECCION CONOCIMIENTOS
 .contenedor-conocimientos {
   display: flex;
   text-align: center;
+  /* este estilo no se aplica porque 
+  los elementos hijos de este se dan su propio font-weight */
   font-weight: bold;
   font-size: 20px;
   flex-direction: column;
@@ -164,11 +177,13 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  /* No es necesario align items center aqui */
   align-items: center;
   max-width: 700px;
 }
 
 .caja {
+  /* siempre preferi usar hex a nombres de colores: en este caso, #ffffff */
   background-color: white;
   border: 1px solid rgb(196, 194, 194);
   display: flex;
@@ -189,6 +204,8 @@ h2 {
 SECCION CITA
 ----------------*/
 .seccion-cita {
+  /* este elemento ya tiene display flex y center porque se lo diste a todas las section, asi que es 
+  repetitivo ponerlo aqui */
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -214,11 +231,13 @@ SECCION CITA
 }
 .cita-texto {
   font-family: "Montserrat", sans-serif;
+  /* Aqui no especificaste el numero de pixeles */
   font-size: px;
   text-align: center;
   color: #d54062;
 }
 .firma {
+  /* No son necesarios estos estilos */
   display: flex;
   justify-content: center;
 }
@@ -241,6 +260,7 @@ SECCION PROYECTOS
 .contenedor-proyectos {
   text-align: center;
   font-weight: bold;
+  /* no es necesario flex wrap aqui */
   flex-wrap: wrap;
 }
 .mis-pro {
@@ -255,6 +275,7 @@ SECCION PROYECTOS
   border-radius: 100px;
 }
 
+/* seria mejor usar aqui la clase .button que la etiqueta button */
 button {
   border: 0;
   background-color: transparent;
@@ -264,6 +285,7 @@ button {
   cursor: pointer;
   margin: 0 20px 30px;
 }
+/* fijate que aqui escribiste projecto en lugar de proyecto: de todos modos este estilo no es necesario */
 .projecto-boton {
   flex-wrap: wrap;
 }
@@ -308,6 +330,7 @@ FOOTER/CONTACTO
   font-size: 20px;
 }
 
+/* esta indicacion es general, para todos los a, asi que deberia ir mas arriba */
 a {
   text-decoration: none;
   color: #fabea7;
@@ -325,8 +348,10 @@ a {
 }
 .iconos {
   display: flex;
+  /* no es necesario align items aqui */
   align-items: center;
   margin-bottom: 30px;
+  /* privilegia usar hex en lugar de nombres de colores */
   color: white;
 }
 
@@ -405,10 +430,16 @@ MEDIA MIN 600PX
     font-size: 30px;
   }
   /*seccion footer*/
+
+  /* no es necesario este estilo */
   .contenedor-footer {
     text-align: center;
   }
 }
+
+/* Este estilo *no* esta en la media query, esta afuera de ella, 
+porque la llave de cierre de la media query esta en la linea 411. El resultado es que 
+se aplica en toda tu pagina (no se ven los links del footer en ningun momento) */
 .barra-footer {
   display: none;
 }
@@ -520,6 +551,10 @@ MEDIA MAX 600PX
     padding: 20px;
   }
 }
+
+/* Estos tres ultimos estilos *no* estan en la media query, estan afuera de ella, 
+porque la llave de cierre de la media query esta en la linea 522. El resultado es que 
+se aplican en toda tu pagina (la consecuencia mas grave: no se ven los links del footer en ningun momento) */
 .barra-footer {
   display: none;
 }
