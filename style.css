@@ -20,6 +20,9 @@ HEADER/NAV
   display: none;
 }
 
+.hamburger-open {
+  display: none;
+}
 .nav-bar {
   display: flex;
   justify-content: flex-end;

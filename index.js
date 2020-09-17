@@ -4,11 +4,11 @@ const cruz = document.querySelector(".hamburger")
 //Función:
 
 cruz.onclick = () => {
-    cruz.classList.toggle(".is-active")
+    cruz.classList.toggle("is-active")
 
-const menu = document.querySelector(".hamburer-open")
+const menu = document.querySelector(".hamburger-open")
 
-menu.classList.toggle"is_active"
+menu.classList.toggle("is_active")
 }
 
 // document.querySelector( ".menuppal" ).classList.toggle("is_active");
