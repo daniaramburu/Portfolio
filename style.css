@@ -429,7 +429,6 @@ MEDIA Q (MIN 600PX)
       overflow-y: scroll;
       position: fixed;
       top: 0;
-      transform: translate3d(0px, -100%, 0px);
       transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
       width: 100%;
       z-index: 1001;
