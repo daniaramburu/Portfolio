@@ -5,8 +5,8 @@ const cruz = document.querySelector(".hamburger")
 
 cruz.onclick = () => {
     cruz.classList.toggle("is-active")
-cruz.classList.toggle("hamburger-open")
-}
 
-// document.querySelector( ".menuppal" ).classList.toggle("is_active");
-// event.preventDefault();
+const menu = document.querySelector(".hamburger-open")
+
+menu.classList.toggle("is_active")
+}
