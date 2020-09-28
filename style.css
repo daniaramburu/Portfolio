@@ -239,10 +239,7 @@ SECCION CITA
   text-align: center;
   color: #d54062;
 }
-.firma {
-  display: flex;
-  justify-content: center;
-}
+
 
 .cita-firma {
   font-family: "Montserrat", serif;
@@ -262,14 +259,14 @@ SECCION PROYECTOS
 .contenedor-proyectos {
   text-align: center;
   font-weight: bold;
-  flex-wrap: wrap;
+  
 }
 .mis-pro {
   color: #d54062;
   font-size: 50px;
   margin: 40px;
 }
-.proyecto-boton-selec {
+#boton-select {
   background-color: #776d8a;
   color: white;
   padding: 0 30px;
@@ -296,7 +293,7 @@ button {
   max-width: 1300px;
 }
 
-.caja-pro {
+.card-project {
   border: 1px solid rgb(196, 194, 194);
   border-radius: 5%;
   width: 200px;
